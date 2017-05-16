@@ -1,0 +1,222 @@
+
+
+/* function validateform()
+{  
+ var employeeid=document.registration.employeeid.value; 
+	var employeeid_len = employeeid.length;
+	
+	var employeeName = document.registration.employeeName;
+	
+	if (employeeid_len == 0 || employeeid_len >= 1 || employeeid_len < 5)
+	{  
+		var message="*User Id should not be empty / length be between 1 to 5";
+		document.getElementById("p1").innerHTML = message;
+		document.getElementById("empName").style.borderColor = "red";
+		return false; 
+	}
+	else if()
+	{
+		var letters = /^[A-Za-z]+$/;
+		boolean result=employeeName.value.match(letters)
+		alert(result);
+		if (result==false) 
+		{
+			var message="Username must have alphabet characters only";
+			document.getElementById("p1").innerHTML = message;
+			document.getElementById("empName").style.borderColor = "red";
+			return false;
+		} 
+	}  
+}   */
+
+
+
+
+/* function employeeid_validation(employeeid, max, min) {
+	if (employeeid_len == 0 || employeeid_len >= 1 || employeeid_len < 5)
+	{  
+		var message="*User Id should not be empty / length be between 1 to 5"
+		document.getElementById("p1").innerHTML = message;
+		return false; 
+		//alert("User Id should not be empty / length be between " + 1+ " to " + 5);
+	}
+	return true;
+} */
+
+
+/* 
+function formValidation() 
+{
+console.log("pooja Rajwar");
+var employeeid = document.registration.employeeid;
+var employeeName = document.registration.employeeName;
+var password = document.registration.password;
+var gender = document.registration.gender;
+var emailId = document.registration.emailId;
+var address = document.registration.address;
+var age = document.registration.age;
+var specialized = document.registration.specialized;
+var language = document.registration.language;
+var salary = document.registration.salary; 
+
+if(employeeid_validation(employeeid,1,5))  
+ {  
+ 	if(employeeNameallLetter(employeeName))  
+ 	{
+ 		if(passid_validation(password,7,12))  
+ 		{  
+ 			if(validGender(gender))
+ 			{
+ 				if(ValidateEmail(emailId))  
+ 				{ 
+
+ 				}   
+			}  
+ 		}  
+ 	}  
+ } 
+
+}
+	alert("uwgfdsahofh");
+var pooja = document.getElementsByName("employeeid")[0].value;
+if (employeeid_validation(pooja, 1, 5)) {
+	console.log("Miral Modi");
+}
+return false;
+} 
+
+
+
+
+function employeeNameallLetter(employeeName) {
+	var letters = /^[A-Za-z]+$/;
+	if (employeeName.value.match(letters)) {
+		return true;
+	} else {
+		alert('Username must have alphabet characters only');
+		employeeName.focus();
+		return false;
+}
+}
+
+	
+function passid_validation(passid, max, min) 
+{
+	var passid_len = passid.value.length;
+	if (passid_len == 0 || passid_len >= min || passid_len < max) {
+	alert("Password should not be empty / length be between " + max+ " to " + min);
+	passid.focus();
+	return false;
+}
+	return true;
+}
+
+
+
+function alphanumeric(address) {
+var letters = /^[0-9a-zA-Z]+$/;
+if (uadd.value.match(letters)) {
+	return true;
+} else {
+	alert('User address must have alphanumeric characters only');
+	uadd.focus();
+	return false;
+}
+}
+
+function countryselect(ucountry) {
+if (ucountry.value == "Default") {
+	alert('Select your country from the list');
+	ucountry.focus();
+	return false;
+} else {
+	return true;
+}
+}
+
+function allnumeric(uzip) {
+var numbers = /^[0-9]+$/;
+if (uzip.value.match(numbers)) {
+	return true;
+} else {
+	alert('ZIP code must have numeric characters only');
+	uzip.focus();
+	return false;
+}
+}
+
+function ValidateEmail(uemail) {
+var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if (uemail.value.match(mailformat)) {
+	return true;
+} else {
+	alert("You have entered an invalid email address!");
+	uemail.focus();
+	return false;
+}
+}
+
+function validGender(gender) {
+x = 0;
+if (umsex.checked) {
+	x++;
+}
+if (ufsex.checked) {
+	x++;
+}
+if (x == 0) {
+	alert('Select Male/Female');
+	umsex.focus();
+	return false;
+} else {
+	alert('Form Successfully Submitted');
+	window.location.reload()
+	return true;
+}
+
+}   */
+
+
+/* function validateName() 
+{
+	var name = document.getElementById("empName").value;
+	//alert(name);
+	if (name == "") 
+	{
+		var message = "*User Id should not be empty";
+		document.getElementById("p1").innerHTML = message;
+		document.getElementById("empName").style.borderColor = "red";
+		//return false;
+	}  
+	else
+	{
+		document.getElementById("p1").innerHTML = "";
+		document.getElementById("empName").style.borderColor = "green";
+		//return false;
+	}
+}
+	
+function validatePassword() {
+	var password = document.getElementById("password").value;
+	if (password == "") 
+	{
+		var message = "password should not be empty";
+		document.getElementById("p2").innerHTML = message;
+		document.getElementById("password").style.borderColor = "red";
+			//return false;
+	}
+		else if (password.length < 6) {
+			var message = "password should be greater than 6";
+			document.getElementById("p2").innerHTML = message;
+			document.getElementById("password").style.borderColor = "red";
+			//return false;
+		} 
+		else
+			{
+			document.getElementById("p2").innerHTML = "";
+			document.getElementById("password").style.borderColor = "green";
+			}
+		
+	}
+	} */
+	
